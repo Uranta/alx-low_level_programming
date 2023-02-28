@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include "main.h"
+#include "holberton.h"
 /**
  *print_array - update value.
  *@a: value to be evaluate.
