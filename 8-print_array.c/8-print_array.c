@@ -4,21 +4,21 @@
 /**
  * print_array - function that prints n elements of an array of integers,
  * followed by a new line.
- * return: always 0
- * @n: This is the lenght of the array
+ * @a: This is the input array
+ * @n: This is the lenght of the array*
  */
 
 void print_array(int *a, int n)
 {
-	int array{5}
+	int index;
 	
-        array[0] = 98;
-    array[1] = 402;
-    array[2] = -198;
-    array[3] = 298;
-    array[4] = -1024;
-    print_array(array, 5);
-    return (0);
+	for (index = 0; index < n; index++)
+	{
+		printf("%d", a[index]);
+		if (index != (n - 1))
+		{
+			printf(", ");
+		}
 	}
 	putchar('\n');
 }
