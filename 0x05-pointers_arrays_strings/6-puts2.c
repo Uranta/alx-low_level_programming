@@ -1,24 +1,29 @@
-#include "main.h"
 #include <stdio.h>
+#include "main.h"
 /**
- * puts2 - Prints every other character of a string, starting with the first.
- *
- * @s: A pointer to the string to print.
- *
- * Description: This function prints every other character of a string,
- * starting with the first character, followed by a new line.
+ *puts2 - print pair values.
+ *@str: value to be evaluate.
+ *Return: not.
  */
-void puts2(char *s)
+void puts2(char *str)
 {
-  int a;
+	int len = 0;
+	int l = 0;
+	char *y = str;
+	int z;
 
-  for (a = 0; s[a] != '\0'; a++)
-  {
-    if (a % 2 == 0)
-      {
-        _putchar(s[a]);
-      }
-  }
-  _putchar('\n');
+	while (*y != '\0')
+	{
+		y++;
+		len++;
+	}
+	l = len - 1;
+	for (z = 0 ; z <= l ; z++)
+	{
+		if (z % 2 == 0)
+		{
+			_putchar(str[z]);
+		}
+	}
+	_putchar('\n');
 }
-
