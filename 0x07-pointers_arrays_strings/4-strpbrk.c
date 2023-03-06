@@ -1,6 +1,3 @@
-#include "main.h"
-#include <stdio.h>
-
 /**
  * _strpbrk - searches string for set of bytes
  *
